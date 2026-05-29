@@ -1,0 +1,44 @@
+{
+  "_comment": "Configuración para Claude Code (CLI Anthropic)",
+  "_instrucciones": [
+    "OPCIÓN A - Comando rápido:",
+    "  cd /ruta/agente-fenix-v5",
+    "  claude mcp add fenix python3 -m src.skill.mcp_server",
+    "",
+    "OPCIÓN B - Manual via ~/.claude.json:",
+    "  1. Copia la sección 'mcpServers' abajo a tu ~/.claude.json",
+    "  2. Reemplaza /ABSOLUTE/PATH con la ruta absoluta del repo",
+    "  3. Reinicia Claude Code"
+  ],
+
+  "mcpServers": {
+    "fenix": {
+      "command": "python3",
+      "args": ["-m", "src.skill.mcp_server"],
+      "cwd": "/ABSOLUTE/PATH/TO/agente-fenix-v5",
+      "env": {
+        "PYTHONPATH": "/ABSOLUTE/PATH/TO/agente-fenix-v5"
+      }
+    }
+  },
+
+  "_skill_install": {
+    "_comment": "Para que Claude Code lea SKILL.md como skill nativa:",
+    "_steps": [
+      "mkdir -p ~/.claude/skills/agente-fenix",
+      "ln -s /ABSOLUTE/PATH/TO/agente-fenix-v5/SKILL.md ~/.claude/skills/agente-fenix/SKILL.md",
+      "ln -s /ABSOLUTE/PATH/TO/agente-fenix-v5/references ~/.claude/skills/agente-fenix/references"
+    ]
+  },
+
+  "_validacion": {
+    "_comments": "Probar que funciona:",
+    "commands": [
+      "claude mcp list                             # debe aparecer 'fenix'",
+      "Y luego en Claude Code conversacional:",
+      "> usa fenix para verificar el teléfono 5512345678",
+      "> corre fenix para 50 leads de ropa CDMX",
+      "> qué eventos hay activos hoy"
+    ]
+  }
+}

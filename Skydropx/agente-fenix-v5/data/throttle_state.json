@@ -1,0 +1,15 @@
+{
+  "cloudflare-protected.com": {
+    "domain": "cloudflare-protected.com",
+    "requests_made": 1,
+    "successful": 0,
+    "failed": 1,
+    "blocked_signals_count": 1,
+    "last_request_at": 1780003308.0978007,
+    "last_blocked_at": 1780003308.09781,
+    "avg_response_ms": 200,
+    "quarantined_until": 0.0,
+    "state": "healthy",
+    "current_delay_sec": 0.0
+  }
+}

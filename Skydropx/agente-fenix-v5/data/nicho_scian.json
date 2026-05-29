@@ -1,0 +1,248 @@
+{
+  "_meta": {
+    "descripcion": "Mapeo nicho usuario → SCIAN INEGI, priorizado para Skydropx (negocios que envían a la rep.)",
+    "fuente": "INEGI SCIAN 2018 + análisis de ICP Skydropx",
+    "ultima_actualizacion": "2026-05-27",
+    "uso": "El Scout normaliza el nicho de entrada y busca el SCIAN aquí. Si no encuentra match exacto, prueba sinónimos del campo 'aliases'."
+  },
+
+  "nichos": {
+    "ropa": {
+      "scianes": ["4632"],
+      "subcategorias": {
+        "ropa general": "463211",
+        "ropa de bebe": "463212",
+        "ropa interior": "463213",
+        "uniformes": "463214",
+        "bisuteria_accesorios": "463215",
+        "disfraces": "463216",
+        "boneteria": "463217",
+        "ropa_piel": "463218"
+      },
+      "aliases": ["ropa", "vestimenta", "moda", "boutique", "fashion"],
+      "modelo_default": "B2C",
+      "skydropx_plan": "PyME",
+      "volumen_mx_aprox": 120000
+    },
+
+    "calzado": {
+      "scianes": ["4633"],
+      "subcategorias": {
+        "calzado general": "463311",
+        "calzado deportivo": "463312"
+      },
+      "aliases": ["calzado", "zapatos", "zapatería", "tenis", "botas"],
+      "modelo_default": "B2C",
+      "skydropx_plan": "PyME",
+      "volumen_mx_aprox": 45000
+    },
+
+    "joyeria": {
+      "scianes": ["4653"],
+      "subcategorias": {
+        "joyeria": "465311",
+        "relojes": "465312"
+      },
+      "aliases": ["joyería", "joyeria", "bisutería", "relojes", "accesorios"],
+      "modelo_default": "B2C",
+      "skydropx_plan": "Starter",
+      "volumen_mx_aprox": 25000
+    },
+
+    "belleza": {
+      "scianes": ["4652"],
+      "subcategorias": {
+        "cosmeticos": "465211",
+        "naturistas_suplementos": "465212"
+      },
+      "aliases": ["belleza", "cosméticos", "maquillaje", "cuidado personal", "skincare"],
+      "modelo_default": "B2C/D2C",
+      "skydropx_plan": "PyME",
+      "volumen_mx_aprox": 30000
+    },
+
+    "farmacia": {
+      "scianes": ["4641"],
+      "subcategorias": {
+        "farmaceuticos": "464111",
+        "perfumeria": "464112",
+        "ortopedia": "464113"
+      },
+      "aliases": ["farmacia", "medicamentos", "salud", "ortopedia"],
+      "modelo_default": "B2B/B2C",
+      "skydropx_plan": "Enterprise",
+      "volumen_mx_aprox": 35000
+    },
+
+    "muebles": {
+      "scianes": ["4661"],
+      "subcategorias": {
+        "muebleria": "466111",
+        "muebles_oficina": "466112"
+      },
+      "aliases": ["muebles", "mueblería", "muebles para oficina", "decoración"],
+      "modelo_default": "B2C",
+      "skydropx_plan": "Enterprise",
+      "volumen_mx_aprox": 40000
+    },
+
+    "electronica": {
+      "scianes": ["4662", "4663"],
+      "subcategorias": {
+        "electronicos_linea_blanca": "466212",
+        "computadoras": "466313"
+      },
+      "aliases": ["electrónica", "electronicos", "computadoras", "celulares", "gadgets"],
+      "modelo_default": "B2C/D2C",
+      "skydropx_plan": "PyME",
+      "volumen_mx_aprox": 50000
+    },
+
+    "deportes": {
+      "scianes": ["4652"],
+      "subcategorias": {
+        "articulos_deportivos": "465211",
+        "acampar": "465113"
+      },
+      "aliases": ["deportes", "deportivo", "fitness", "outdoor", "camping"],
+      "modelo_default": "B2C/D2C",
+      "skydropx_plan": "PyME",
+      "volumen_mx_aprox": 20000
+    },
+
+    "juguetes": {
+      "scianes": ["4651"],
+      "subcategorias": {
+        "juguetes": "465112"
+      },
+      "aliases": ["juguetes", "toys", "juegos infantiles"],
+      "modelo_default": "B2C",
+      "skydropx_plan": "Starter",
+      "volumen_mx_aprox": 15000
+    },
+
+    "libros_papeleria": {
+      "scianes": ["4659"],
+      "subcategorias": {
+        "libros": "465921",
+        "revistas": "465922",
+        "papeleria": "465932"
+      },
+      "aliases": ["librería", "libros", "papelería", "papelerias", "oficina"],
+      "modelo_default": "B2C/B2B",
+      "skydropx_plan": "Starter",
+      "volumen_mx_aprox": 30000
+    },
+
+    "refacciones_autos": {
+      "scianes": ["4684"],
+      "subcategorias": {
+        "partes_refacciones": "468411",
+        "llantas": "468412"
+      },
+      "aliases": ["refacciones", "autopartes", "llantas", "automotriz"],
+      "modelo_default": "B2B/B2C",
+      "skydropx_plan": "PyME",
+      "volumen_mx_aprox": 60000
+    },
+
+    "ferreteria": {
+      "scianes": ["4671"],
+      "subcategorias": {
+        "ferreteria_tlapaleria": "467111"
+      },
+      "aliases": ["ferretería", "tlapalería", "herramientas", "construcción"],
+      "modelo_default": "B2B/B2C",
+      "skydropx_plan": "PyME",
+      "volumen_mx_aprox": 80000
+    },
+
+    "abarrotes": {
+      "scianes": ["4611"],
+      "subcategorias": {
+        "abarrotes": "461110",
+        "golosinas": "461160"
+      },
+      "aliases": ["abarrotes", "tienda de abarrotes", "ultramarinos", "miscelánea"],
+      "modelo_default": "B2C",
+      "skydropx_plan": "Starter",
+      "volumen_mx_aprox": 250000
+    },
+
+    "restaurantes": {
+      "scianes": ["722"],
+      "subcategorias": {},
+      "aliases": ["restaurantes", "comida", "food", "gastronomía", "cocina"],
+      "modelo_default": "B2C",
+      "skydropx_plan": "Starter (delivery)",
+      "volumen_mx_aprox": 778000
+    },
+
+    "ecommerce_puro": {
+      "scianes": ["4541"],
+      "subcategorias": {
+        "internet_catalogo_tv": "454111-454113"
+      },
+      "aliases": ["ecommerce", "tienda online", "comercio electrónico", "venta por internet"],
+      "modelo_default": "D2C/B2C",
+      "skydropx_plan": "PyME/Enterprise",
+      "volumen_mx_aprox": 5000,
+      "nota": "SCIAN 454111 está casi en desuso (devuelve 0 en muchas entidades). Mejor combinar con dorks de Shopify/Tiendanube."
+    },
+
+    "manufactura_textil": {
+      "scianes": ["315"],
+      "subcategorias": {
+        "fabricacion_prendas_vestir": "315"
+      },
+      "aliases": ["maquila", "textil", "fabricación de ropa", "confección"],
+      "modelo_default": "B2B",
+      "skydropx_plan": "Enterprise",
+      "volumen_mx_aprox": 25000
+    },
+
+    "manufactura_calzado": {
+      "scianes": ["316"],
+      "subcategorias": {
+        "productos_cuero_calzado": "316"
+      },
+      "aliases": ["fabricación de calzado", "curtidurías", "cuero"],
+      "modelo_default": "B2B",
+      "skydropx_plan": "Enterprise",
+      "volumen_mx_aprox": 8000
+    }
+  },
+
+  "campañas_sugeridas": {
+    "semana_ropa_moda": {
+      "scianes": ["4632", "315"],
+      "estados_prioritarios": ["09", "14", "15", "19"],
+      "estrato_target": ["1", "2", "3", "4"],
+      "meta_estimada": 25000
+    },
+    "semana_calzado_accesorios": {
+      "scianes": ["4633", "4653", "316"],
+      "estados_prioritarios": ["11", "14", "15"],
+      "estrato_target": ["1", "2", "3"],
+      "meta_estimada": 18000
+    },
+    "semana_hogar_muebles": {
+      "scianes": ["4661", "4662", "4663"],
+      "estados_prioritarios": ["09", "14", "15", "19"],
+      "estrato_target": ["3", "4", "5"],
+      "meta_estimada": 22000
+    },
+    "semana_belleza_salud": {
+      "scianes": ["4652", "4641"],
+      "estados_prioritarios": ["09", "14", "15", "19", "22"],
+      "estrato_target": ["1", "2", "3"],
+      "meta_estimada": 20000
+    },
+    "semana_deportes_juguetes": {
+      "scianes": ["4651", "4652"],
+      "estados_prioritarios": ["09", "14", "15", "19"],
+      "estrato_target": ["1", "2", "3"],
+      "meta_estimada": 15000
+    }
+  }
+}

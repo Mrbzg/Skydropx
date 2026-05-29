@@ -1,0 +1,24 @@
+{
+  "_comment": "Configuración para usar Agente Fénix como MCP en opencode (formato correcto de opencode)",
+  "_instrucciones": [
+    "NORMALMENTE NO necesitas esto: el instalador (install.py) lo configura solo.",
+    "Esto es solo para configuración MANUAL:",
+    "1. Copia el contenido (sin las claves '_...') a: ~/.config/opencode/opencode.json",
+    "   (o si ya tienes uno, agrega solo la sección dentro de 'mcp')",
+    "2. Reemplaza /ABSOLUTE/PATH/TO/agente-fenix-v5 con la ruta absoluta del proyecto",
+    "3. Reinicia opencode para que detecte el MCP",
+    "4. Verifica con: > usa fenix para verificar el teléfono 5512345678"
+  ],
+
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "agente-fenix": {
+      "type": "local",
+      "command": ["python3", "-m", "src.skill.mcp_server"],
+      "environment": {
+        "PYTHONPATH": "/ABSOLUTE/PATH/TO/agente-fenix-v5"
+      },
+      "enabled": true
+    }
+  }
+}

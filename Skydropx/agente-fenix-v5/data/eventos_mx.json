@@ -1,0 +1,512 @@
+{
+  "_meta": {
+    "version": "1.0",
+    "descripcion": "Catalogo de eventos MX + globales que disparan campanas comerciales."
+  },
+  "eventos": [
+    {
+      "id": "san_valentin",
+      "nombre": "Dia de San Valentin",
+      "tipo": "fecha_fija",
+      "fecha": "02-14",
+      "ventana_dias_antes": 30,
+      "ventana_dias_despues": 3,
+      "keywords": [
+        "san valentin",
+        "14 de febrero",
+        "amor y amistad",
+        "regalo pareja"
+      ],
+      "categorias_target": [
+        "joyeria",
+        "ropa",
+        "belleza",
+        "chocolates",
+        "flores"
+      ],
+      "dorks_intent": [
+        "\"san valentin\" \"promocion\" site:.mx",
+        "\"regalo del 14 de febrero\" site:.mx"
+      ]
+    },
+    {
+      "id": "dia_de_la_mujer",
+      "nombre": "Dia Internacional de la Mujer",
+      "tipo": "fecha_fija",
+      "fecha": "03-08",
+      "ventana_dias_antes": 14,
+      "ventana_dias_despues": 1,
+      "keywords": [
+        "8m",
+        "8 de marzo",
+        "dia de la mujer"
+      ],
+      "categorias_target": [
+        "belleza",
+        "ropa femenina",
+        "accesorios"
+      ],
+      "dorks_intent": [
+        "\"8 de marzo\" \"promocion mujer\" site:.mx",
+        "\"dia de la mujer\" \"descuento\" site:.mx"
+      ]
+    },
+    {
+      "id": "dia_de_las_madres",
+      "nombre": "Dia de las Madres",
+      "tipo": "fecha_fija",
+      "fecha": "05-10",
+      "ventana_dias_antes": 45,
+      "ventana_dias_despues": 3,
+      "keywords": [
+        "dia de las madres",
+        "10 de mayo",
+        "regalo mama"
+      ],
+      "categorias_target": [
+        "joyeria",
+        "belleza",
+        "ropa",
+        "electrodomesticos",
+        "flores",
+        "chocolates"
+      ],
+      "dorks_intent": [
+        "\"dia de las madres\" \"promocion\" site:.mx",
+        "\"regalo mama\" \"envio gratis\" site:.mx",
+        "\"10 de mayo\" \"comprar\" site:.mx"
+      ]
+    },
+    {
+      "id": "dia_del_padre",
+      "nombre": "Dia del Padre",
+      "tipo": "tercer_domingo_junio",
+      "ventana_dias_antes": 30,
+      "ventana_dias_despues": 3,
+      "keywords": [
+        "dia del padre",
+        "regalo papa"
+      ],
+      "categorias_target": [
+        "ropa hombre",
+        "calzado",
+        "herramientas",
+        "electronica",
+        "deportes"
+      ],
+      "dorks_intent": [
+        "\"dia del padre\" \"promocion\" site:.mx",
+        "\"regalo papa\" \"envio\" site:.mx"
+      ]
+    },
+    {
+      "id": "hot_sale",
+      "nombre": "Hot Sale (AMVO)",
+      "tipo": "fecha_movil",
+      "fecha_aprox": "05-25",
+      "duracion_dias": 9,
+      "ventana_dias_antes": 30,
+      "ventana_dias_despues": 7,
+      "keywords": [
+        "hot sale",
+        "hotsale",
+        "amvo",
+        "venta especial mayo"
+      ],
+      "categorias_target": [
+        "todos"
+      ],
+      "dorks_intent": [
+        "\"hot sale\" site:.mx",
+        "\"hot sale 2026\" \"descuento\" site:.mx",
+        "\"hotsale\" \"envio gratis\" site:.mx"
+      ]
+    },
+    {
+      "id": "regreso_a_clases",
+      "nombre": "Regreso a Clases",
+      "tipo": "rango",
+      "fecha_inicio": "07-15",
+      "fecha_fin": "09-15",
+      "ventana_dias_antes": 0,
+      "ventana_dias_despues": 0,
+      "keywords": [
+        "regreso a clases",
+        "back to school",
+        "utiles escolares",
+        "uniformes"
+      ],
+      "categorias_target": [
+        "papeleria",
+        "ropa",
+        "calzado",
+        "mochilas",
+        "electronica"
+      ],
+      "dorks_intent": [
+        "\"regreso a clases\" \"promocion\" site:.mx",
+        "\"utiles escolares\" \"paquete\" site:.mx"
+      ]
+    },
+    {
+      "id": "buen_fin",
+      "nombre": "Buen Fin",
+      "tipo": "tercer_viernes_noviembre",
+      "duracion_dias": 4,
+      "ventana_dias_antes": 30,
+      "ventana_dias_despues": 7,
+      "keywords": [
+        "buen fin",
+        "buenfin",
+        "el fin de semana mas barato"
+      ],
+      "categorias_target": [
+        "todos"
+      ],
+      "dorks_intent": [
+        "\"buen fin\" site:.mx",
+        "\"buen fin 2026\" \"descuento\" site:.mx",
+        "\"buenfin\" \"meses sin intereses\" site:.mx"
+      ]
+    },
+    {
+      "id": "black_friday",
+      "nombre": "Black Friday",
+      "tipo": "cuarto_viernes_noviembre",
+      "ventana_dias_antes": 14,
+      "ventana_dias_despues": 4,
+      "keywords": [
+        "black friday",
+        "viernes negro",
+        "cyber monday"
+      ],
+      "categorias_target": [
+        "electronica",
+        "ropa",
+        "tecnologia"
+      ],
+      "dorks_intent": [
+        "\"black friday\" \"Mexico\" site:.mx",
+        "\"black friday 2026\" \"oferta\" site:.mx"
+      ]
+    },
+    {
+      "id": "navidad",
+      "nombre": "Temporada Navidena",
+      "tipo": "rango",
+      "fecha_inicio": "11-15",
+      "fecha_fin": "12-24",
+      "ventana_dias_antes": 0,
+      "ventana_dias_despues": 0,
+      "keywords": [
+        "navidad",
+        "regalo navideno",
+        "intercambio navideno",
+        "posada",
+        "fin de ano"
+      ],
+      "categorias_target": [
+        "juguetes",
+        "ropa",
+        "joyeria",
+        "electronica",
+        "belleza",
+        "comida"
+      ],
+      "dorks_intent": [
+        "\"regalos de navidad\" site:.mx",
+        "\"intercambio navideno\" site:.mx",
+        "\"posadas\" \"promocion\" site:.mx"
+      ]
+    },
+    {
+      "id": "reyes_magos",
+      "nombre": "Dia de Reyes",
+      "tipo": "fecha_fija",
+      "fecha": "01-06",
+      "ventana_dias_antes": 21,
+      "ventana_dias_despues": 1,
+      "keywords": [
+        "dia de reyes",
+        "reyes magos",
+        "rosca de reyes"
+      ],
+      "categorias_target": [
+        "juguetes",
+        "ropa infantil"
+      ],
+      "dorks_intent": [
+        "\"dia de reyes\" \"juguetes\" site:.mx",
+        "\"reyes magos\" \"promocion\" site:.mx"
+      ]
+    },
+    {
+      "id": "fiestas_patrias",
+      "nombre": "Fiestas Patrias",
+      "tipo": "fecha_fija",
+      "fecha": "09-15",
+      "ventana_dias_antes": 21,
+      "ventana_dias_despues": 5,
+      "keywords": [
+        "15 de septiembre",
+        "fiestas patrias",
+        "grito de independencia",
+        "viva mexico"
+      ],
+      "categorias_target": [
+        "ropa folklorica",
+        "decoracion",
+        "comida tipica"
+      ],
+      "dorks_intent": [
+        "\"fiestas patrias\" \"promocion\" site:.mx",
+        "\"viva mexico\" \"venta\" site:.mx"
+      ]
+    },
+    {
+      "id": "halloween_dia_muertos",
+      "nombre": "Halloween + Dia de Muertos",
+      "tipo": "rango",
+      "fecha_inicio": "10-15",
+      "fecha_fin": "11-02",
+      "ventana_dias_antes": 0,
+      "ventana_dias_despues": 0,
+      "keywords": [
+        "halloween",
+        "dia de muertos",
+        "disfraces",
+        "ofrenda",
+        "calaveritas"
+      ],
+      "categorias_target": [
+        "disfraces",
+        "decoracion",
+        "dulces"
+      ],
+      "dorks_intent": [
+        "\"disfraz halloween\" site:.mx",
+        "\"dia de muertos\" \"decoracion\" site:.mx"
+      ]
+    },
+    {
+      "id": "mundial_fifa_2026",
+      "nombre": "Mundial FIFA 2026",
+      "tipo": "rango",
+      "fecha_inicio": "2026-06-11",
+      "fecha_fin": "2026-07-19",
+      "ventana_dias_antes": 90,
+      "ventana_dias_despues": 7,
+      "keywords": [
+        "mundial 2026",
+        "fifa world cup 2026",
+        "seleccion mexicana",
+        "el tri",
+        "playera seleccion",
+        "jersey mundial",
+        "cancha del mundial"
+      ],
+      "categorias_target": [
+        "ropa deportiva",
+        "deportes",
+        "electronica",
+        "comida",
+        "bebidas"
+      ],
+      "dorks_intent": [
+        "\"mundial 2026\" \"promocion\" site:.mx",
+        "\"jersey seleccion\" site:.mx",
+        "\"compra y gana\" \"mundial\" site:.mx",
+        "\"registrate y gana\" \"mundial\" site:.mx",
+        "\"viaje al mundial\" \"compra\" site:.mx"
+      ]
+    },
+    {
+      "id": "super_bowl",
+      "nombre": "Super Bowl",
+      "tipo": "primer_domingo_febrero",
+      "ventana_dias_antes": 14,
+      "ventana_dias_despues": 1,
+      "keywords": [
+        "super bowl",
+        "superbowl",
+        "nfl"
+      ],
+      "categorias_target": [
+        "comida",
+        "bebidas",
+        "electronica",
+        "ropa deportiva"
+      ],
+      "dorks_intent": [
+        "\"super bowl\" \"promocion\" site:.mx",
+        "\"superbowl\" \"nachos\" site:.mx"
+      ]
+    },
+    {
+      "id": "olimpiadas",
+      "nombre": "Juegos Olimpicos",
+      "tipo": "variable",
+      "ventana_dias_antes": 60,
+      "ventana_dias_despues": 15,
+      "keywords": [
+        "olimpiadas",
+        "juegos olimpicos",
+        "olympic games"
+      ],
+      "categorias_target": [
+        "ropa deportiva",
+        "deportes",
+        "electronica"
+      ],
+      "dorks_intent": [
+        "\"olimpiadas\" \"promocion\" site:.mx",
+        "\"juegos olimpicos\" \"jersey\" site:.mx"
+      ]
+    },
+    {
+      "id": "champions_league",
+      "nombre": "UEFA Champions League Final",
+      "tipo": "sabado_finales_mayo",
+      "ventana_dias_antes": 14,
+      "ventana_dias_despues": 1,
+      "keywords": [
+        "champions league",
+        "final champions",
+        "uefa champions"
+      ],
+      "categorias_target": [
+        "ropa deportiva",
+        "bebidas",
+        "comida"
+      ],
+      "dorks_intent": [
+        "\"final champions\" \"promocion\" site:.mx"
+      ]
+    },
+    {
+      "id": "cyber_monday",
+      "nombre": "Cyber Monday",
+      "tipo": "lunes_despues_thanksgiving",
+      "ventana_dias_antes": 7,
+      "ventana_dias_despues": 2,
+      "keywords": [
+        "cyber monday",
+        "cybermonday",
+        "ciber lunes"
+      ],
+      "categorias_target": [
+        "electronica",
+        "tecnologia"
+      ],
+      "dorks_intent": [
+        "\"cyber monday\" site:.mx",
+        "\"cyber monday 2026\" \"oferta\" site:.mx"
+      ]
+    }
+  ],
+  "_keywords_promocionales": {
+    "descripcion": "Keywords genericas que indican campana activa con premio/sorteo.",
+    "compra_y_gana": [
+      "compra y gana",
+      "compre y gane",
+      "comprando ganas",
+      "con tu compra ganate",
+      "con tu compra participas",
+      "tu ticket es tu boleto"
+    ],
+    "registrate_gana": [
+      "registrate y gana",
+      "registra tu compra",
+      "registra tu ticket",
+      "ingresa tu codigo y gana",
+      "sube tu ticket y gana",
+      "escanea y participa"
+    ],
+    "sorteo": [
+      "gran sorteo",
+      "sorteo activo",
+      "sorteo oficial",
+      "participa en el sorteo",
+      "bases del sorteo",
+      "sorteo permiso"
+    ],
+    "premio": [
+      "gana un viaje",
+      "ganador del concurso",
+      "el premio es",
+      "premios por",
+      "gana premios",
+      "ganador hot sale",
+      "ganador buen fin"
+    ],
+    "descuento_codigo": [
+      "usa el codigo",
+      "cupon de descuento",
+      "codigo promocional",
+      "aplica al checkout",
+      "aplica codigo"
+    ]
+  },
+  "_dorks_descubrimiento_agencia": {
+    "descripcion": "Dorks para encontrar la agencia/empresa detras de una campana.",
+    "patterns_por_dominio": [
+      "site:{dominio} \"bases\" \"sorteo\" filetype:pdf",
+      "site:{dominio} \"terminos y condiciones\" \"sorteo\"",
+      "site:{dominio} \"aviso de privacidad\" \"sorteo\"",
+      "site:{dominio} \"responsable del tratamiento\"",
+      "site:{dominio} \"organizado por\"",
+      "site:{dominio} \"operado por\"",
+      "site:{dominio} \"agencia\""
+    ],
+    "patterns_por_campana": [
+      "\"{nombre_campana}\" \"organiza\" \"agencia\"",
+      "\"{nombre_campana}\" \"operado por\"",
+      "\"{nombre_campana}\" \"agencia de activacion\""
+    ],
+    "agencias_conocidas_mx": [
+      "MASSIVE EMOTIONS",
+      "BBDO Mexico",
+      "Ogilvy Mexico",
+      "McCann Mexico",
+      "JWT Mexico",
+      "Wunderman Thompson",
+      "Publicis Mexico",
+      "DDB Mexico",
+      "Y&R Mexico",
+      "Grey Mexico",
+      "Leo Burnett Mexico",
+      "Havas Mexico",
+      "Saatchi Mexico",
+      "TBWA Mexico",
+      "FCB Mexico",
+      "Carat Mexico",
+      "OMD Mexico",
+      "Mindshare Mexico",
+      "GroupM",
+      "Wavemaker",
+      "PHD",
+      "Initiative",
+      "UM Mexico",
+      "Zenith Mexico",
+      "Starcom",
+      "Anonimo Agency",
+      "Heads Up Studio",
+      "Flock",
+      "Anagrama",
+      "Mexico Branding",
+      "La Comer Activa",
+      "Activacion BTL",
+      "RGA Mexico",
+      "DDB Latina",
+      "ConverArte",
+      "FlexUS",
+      "Promomedios",
+      "Marketing Q",
+      "BTL Group",
+      "Brandhouse",
+      "Datumax",
+      "Anuncia Activacion"
+    ],
+    "rfc_pattern": "[A-Z&]{3,4}\\d{6}[A-Z0-9]{3}"
+  }
+}

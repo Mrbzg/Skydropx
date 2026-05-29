@@ -1,0 +1,54 @@
+# NUNCA commitear secretos
+.env
+.env.local
+.env.*.local
+*.env
+
+# Credentials
+credentials.json
+*credentials*
+*secret*
+*token*.txt
+
+# DB local
+*.sqlite
+*.sqlite-journal
+*.db
+data/fenix.sqlite
+data/memory.db
+
+# Output
+output/
+logs/
+sessions/
+backups/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Editor
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# Docker volumes
+searxng/
+pgdata/
+
+# Setup turnkey (generados por setup.sh — específicos de cada máquina)
+.venv/
+.opencode/
+.claude/
+opencode.json
+opencode.json.bak
